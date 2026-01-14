@@ -1,16 +1,14 @@
-const canvas = document.getElementById("canvas") as HTMLCanvasElement;
-console.log(canvas);
+import { useEffect,useRef } from "react";
 
-const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
 
-const dpr = window.devicePixelRatio || 1;
-const width = Math.floor(canvas.clientWidth * dpr);
-const height = Math.floor(canvas.clientHeight * dpr);
-canvas.width = width;
-canvas.height = height;
-ctx.strokeStyle = "violet";
 
-function drawBullet(x:number,y:number,xLength:number,yLength:number){
+
+function drawCurve(x:number,y:number,cpx1:number,cpy1:number,cpx2:number,cpy2:number, ctx: CanvasRenderingContext2D){
     ctx.beginPath();
     ctx.moveTo(x,y);
+    ctx.bezierCurveTo(cpx1,cpy1,cpx2,cpy2,x,y);
+    ctx.setLineDash([5,15]);
+    ctx.stroke();
 }
+
+export default drawCurve

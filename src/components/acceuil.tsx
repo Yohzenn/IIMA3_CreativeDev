@@ -4,7 +4,6 @@ import jennie from "./../assets/img/jennie.png";
 
 function Accueil () {
 
-
     return (
         <>
             <div className="container">
