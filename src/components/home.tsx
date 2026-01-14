@@ -1,4 +1,4 @@
-import "./../css/acceuil.css";
+import "./../css/home.css";
 import jennie from "./../assets/img/jennie.png";
 //import brouillard from "./../assets/img/brouillard.png";
 
