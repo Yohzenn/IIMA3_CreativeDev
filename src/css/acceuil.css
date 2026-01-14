@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.titre {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin:auto;
+}
+
+.sousTitre {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jennie {
+    scale: 0.5;
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./../assets/img/fond.png");
+}
